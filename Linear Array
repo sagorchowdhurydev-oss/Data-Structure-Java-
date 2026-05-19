@@ -1,0 +1,15 @@
+//Insert
+    public static String Insert(int [] ar,int arindx,int val){
+        int [] newarr = new int[ar.length+1];
+        for(int c = 0; c < ar.length; c++){
+            if (c < arindx) {
+                newarr[c]=ar[c];
+            }
+            else{
+                newarr[c+1]=ar[c];
+            }
+        }
+        newarr[arindx]=val;
+
+        return Arrays.toString(newarr);
+    }
