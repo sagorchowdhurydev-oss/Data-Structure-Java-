@@ -1,3 +1,19 @@
+//Reverse Array
+
+int c = 0;
+        int d = myArray.length-1;
+        
+        while (d>c) {
+            int first = myArray[c];
+            myArray[c]=myArray[d];   
+            myArray[d] = first;                          
+
+            c++;
+            d--;
+        }
+
+
+
 //Insert
     public static String Insert(int [] ar,int arindx,int val){
         int [] newarr = new int[ar.length+1];
